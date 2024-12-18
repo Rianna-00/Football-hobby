@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spain's Football Team</title>
+    <style>
+      h1 {
+        text-align: center;
+        border: 10px, groove, #ea1616;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: #d90202;
+        padding: 10px;
+        border-radius: 2px;
+        font: helvetica;
+      }
+
+      h2 {
+        text-align: center;
+        color: #d90202;
+        font-size: 18px;
+        font: helvetica;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+        font: serif;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: linear-gradient(#d90202, rgb(255, 55, 55), #d90202);
+        color: white;
+        font-size: 18px;
+        font: serif;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .team {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px 80px;
+      }
+
+      .learn-more {
+        text-align: center;
+        color: #ce9f04;
+        text-decoration: none;
+        font-size: 16px;
+        font: serif;
+      }
+
+      .learn-more:hover {
+        text-align: center;
+        text-decoration: underline;
+        font: serif;
+      }
+
+      .footer {
+        text-align: center;
+        color: black;
+        font-size: 12px; 
+        font: serif; 
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="team">
+      <h1>Spanish Football</h1>
+      <h2>One of the best teams in the world! </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/099/original/Football.jpeg?1726662472"
+        alt="Spanish Football Team"
+      />
+      <p>
+        Spain is one of eight national teams to have been crowned world
+        champions and has participated in a total of 16 out of 22 FIFA World
+        Cups, winning the 2010 edition, and qualifying consistently since 1978.
+        Spain has participated in a total of twelve out of seventeen UEFA
+        European Championships, winning their first in 1964, and are the current
+        European champions, having won a record fourth title in 2024.
+      </p>
+    </br>
+      <a
+        href="https://rfef.es/es/selecciones/seleccion-absoluta"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on their website and buy their merchandise below!
+      </a>
+    </br> 
+</br> 
+      <button class="buy-button">👉 Buy Football T-Shirt</button>
+      <p class="footer">This page was built by Rianna Modi</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite football team?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email, meanwhile watch lots of football! " + " Go " + emoji +"!" );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
